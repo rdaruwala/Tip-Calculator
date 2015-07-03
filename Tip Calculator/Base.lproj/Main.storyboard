@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cost per Person: $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py0-CN-OWs">
+                                <rect key="frame" x="20" y="106" width="560" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.88809974749999998" green="0.88809974749999998" blue="0.88809974749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HU-hc-GgP">
+                                <rect key="frame" x="67" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tenperAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Sn-fX-cud"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9A-oQ-8E0">
+                                <rect key="frame" x="67" y="380" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="twentyPerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wP7-KC-HWa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2i-gW-fgw">
+                                <rect key="frame" x="252" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fifteenperAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mN-qo-fBX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zF-c2-iWH">
+                                <rect key="frame" x="252" y="380" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="twentyfivePerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJf-ar-gm2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK0-B4-rhj">
+                                <rect key="frame" x="277" y="550" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="0.0588715764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L46-8s-A0u"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Bill" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7K-Bo-6pQ">
+                                <rect key="frame" x="253" y="512" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="s6v-zx-Vyt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sy-6q-wZm">
+                                <rect key="frame" x="290" y="467" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="downPersonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1IZ-2K-sJF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaA-pp-PY9">
+                                <rect key="frame" x="191" y="451" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0588715764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8x-ZL-dpW">
+                                <rect key="frame" x="290" y="429" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="upPersonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="81K-go-2ua"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Percent Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tG-Nq-Gza">
+                                <rect key="frame" x="120" y="241" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0588715764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Total Tip: $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmF-3G-AoQ">
+                                <rect key="frame" x="20" y="20" width="560" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.88809974749999998" green="0.88809974749999998" blue="0.88809974749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Grand Total Cost: $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9r-21-toT">
+                                <rect key="frame" x="20" y="60" width="560" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.88809974749999998" green="0.88809974749999998" blue="0.88809974749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IK0-B4-rhj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="265" id="IdY-3C-NNd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TmF-3G-AoQ" secondAttribute="trailing" id="OVz-yV-RLY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q9r-21-toT" secondAttribute="trailing" id="PoS-nm-0vB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Py0-CN-OWs" secondAttribute="trailing" id="Y72-In-ojj"/>
+                            <constraint firstItem="IK0-B4-rhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="frR-Dx-TCD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Py0-CN-OWs" secondAttribute="leading" id="iMU-MW-CUb"/>
+                            <constraint firstItem="k7K-Bo-6pQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="227" id="mWg-U4-5nO"/>
+                            <constraint firstItem="IK0-B4-rhj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="265" id="oqg-gz-MrG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Q9r-21-toT" secondAttribute="leading" id="pMw-JE-WeL"/>
+                            <constraint firstItem="k7K-Bo-6pQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="v7o-QV-uft"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TmF-3G-AoQ" secondAttribute="leading" id="wzn-JO-Vmb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GrandTotalObject" destination="Q9r-21-toT" id="E9U-xp-XWM"/>
+                        <outlet property="displayAmount" destination="Py0-CN-OWs" id="cVp-Qd-QhA"/>
+                        <outlet property="displayPeople" destination="vaA-pp-PY9" id="bZx-U4-6cA"/>
+                        <outlet property="downPeople" destination="7Sy-6q-wZm" id="aGG-ov-XdO"/>
+                        <outlet property="fifteenPercentButton" destination="p2i-gW-fgw" id="g5V-86-8Zo"/>
+                        <outlet property="getMoney" destination="k7K-Bo-6pQ" id="V3g-Mp-wCn"/>
+                        <outlet property="tenPercentButton" destination="9HU-hc-GgP" id="9JB-g5-DGF"/>
+                        <outlet property="tipObject" destination="TmF-3G-AoQ" id="vmG-Qf-gXO"/>
+                        <outlet property="twentyPercentButton" destination="j9A-oQ-8E0" id="e6F-rL-gcI"/>
+                        <outlet property="twentyfivePercentButton" destination="3zF-c2-iWH" id="ay0-2q-w9m"/>
+                        <outlet property="upPeople" destination="a8x-ZL-dpW" id="xLm-a5-RiV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="364"/>
+        </scene>
+    </scenes>
+</document>

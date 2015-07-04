@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var submitButton: UIButton!
     @IBOutlet var tenPercentButton: UIButton!
     
     @IBOutlet var twentyfivePercentButton: UIButton!
@@ -163,6 +164,11 @@ class ViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        
+        submitButton.backgroundColor = UIColor.clearColor()
+        submitButton.layer.cornerRadius = 10
+        submitButton.layer.borderWidth = 1
+        submitButton.layer.borderColor = UIColor.redColor().CGColor
     }
     
 

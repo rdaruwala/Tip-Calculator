@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK0-B4-rhj">
-                                <rect key="frame" x="277" y="550" width="49" height="30"/>
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="1" green="0.0588715764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -112,7 +112,9 @@
                             <constraint firstItem="IK0-B4-rhj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="265" id="IdY-3C-NNd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TmF-3G-AoQ" secondAttribute="trailing" id="OVz-yV-RLY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Q9r-21-toT" secondAttribute="trailing" id="PoS-nm-0vB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IK0-B4-rhj" secondAttribute="trailing" id="Td1-K6-1iF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Py0-CN-OWs" secondAttribute="trailing" id="Y72-In-ojj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IK0-B4-rhj" secondAttribute="leading" id="b7J-F4-YBK"/>
                             <constraint firstItem="IK0-B4-rhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="frR-Dx-TCD"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Py0-CN-OWs" secondAttribute="leading" id="iMU-MW-CUb"/>
                             <constraint firstItem="k7K-Bo-6pQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="227" id="mWg-U4-5nO"/>
@@ -129,6 +131,7 @@
                         <outlet property="downPeople" destination="7Sy-6q-wZm" id="aGG-ov-XdO"/>
                         <outlet property="fifteenPercentButton" destination="p2i-gW-fgw" id="g5V-86-8Zo"/>
                         <outlet property="getMoney" destination="k7K-Bo-6pQ" id="V3g-Mp-wCn"/>
+                        <outlet property="submitButton" destination="IK0-B4-rhj" id="x5h-ia-UKP"/>
                         <outlet property="tenPercentButton" destination="9HU-hc-GgP" id="9JB-g5-DGF"/>
                         <outlet property="tipObject" destination="TmF-3G-AoQ" id="vmG-Qf-gXO"/>
                         <outlet property="twentyPercentButton" destination="j9A-oQ-8E0" id="e6F-rL-gcI"/>
